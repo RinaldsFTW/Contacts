@@ -1,0 +1,13 @@
+while(True):
+    response = input('A-add new, P-print, E-exit, D-delete: ')
+    if response == 'A':
+        AddContact()
+        SaveContacts()
+    elif response == 'P':
+        PrintContacts()
+    elif response == 'D':
+        DeleteContact()
+        SaveContacts()
+    elif response == 'E':
+        print('Bye bye!')
+        break
